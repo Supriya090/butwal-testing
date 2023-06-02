@@ -1,0 +1,50 @@
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <script>
+      !(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          // "/Users/santoshdahal/Desktop/Projects/webchat-plugin/lib/index.js"),
+          "https://cdn.jsdelivr.net/gh/santoshdahal2016/diyochatplugin@f0c72ef94643cab230b19e1e9f32b58f82ab3808/index.js"),
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                customData: {
+                  companyId: "e62d7703-1486-4d7a-a758-af7611edb900",
+                },
+                initPayload: "hello",
+                socketUrl: "wss://backend.diyochat.com/ws/webchat/",
+                title: "बुटवल उप-महानगरपालिका",
+                subtitle: "समानता, स्वाभिमान र अवसर-बस्नयोग्य बुटवल शहर",
+                showMessageDate: false,
+                inputTextFieldHint:
+                  "तपाई लाई  कुन सेवा बारे जान्न आवश्यक छ ? ...",
+                embedded: false,
+                params: {
+                  storage: "local",
+                },
+                displayUnreadCount: true,
+                //   assistBackgoundColor:'red',
+                //   assistTextColor:'white',
+                //   userBackgroundColor:'green',
+                mainColor: "#234A83",
+                profileAvatar:
+                  "https://www.butwalmun.gov.np/sites/all/themes/newmun/new_logo.png",
+                // openLauncherImage:"https://i.ibb.co/FhgRzBV/340767167-106343172425216-8901994321881831034-n-removebg-preview-1.png"
+              },
+              null
+            );
+          }),
+          (e.charset = "UTF-8"); // Add charset="UTF-8"
+        t.insertBefore(e, t.firstChild);
+        // Add meta charset="UTF-8"
+      })();
+    </script>
+  </head>
+  <body>
+    This is Butwal SubMetropolitan's Chatbot.
+  </body>
+</html>
